@@ -11,12 +11,13 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: start;
-    font-size: 28px;
+    font-size: 38px;
     font-weight: bold;
-    height: 70px;
+    height: 140px;
     padding-left: 24px;
-    background-color: rgb(16, 91, 16);
+    background-color: rgb(8, 9, 8);
     color: #fcfcfc;
+    border-bottom: 10px #205b26 solid;
 }
 
 .title{
@@ -50,33 +51,41 @@ body{
 }
 
 .footer{
-    background-color: black;
-    padding: 20px 20px 20px 20px;
+    border-top: 10px #205b26 solid;
+    background-color: rgb(8, 9, 8);
+    padding: 5px 70px 5px 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
 }
 
-.topicos{
-    display: block;
-    position: absolute;
-    padding-left: 70%;
-    padding-top: 4%;
+.dados{
+    display: flex;
+    flex-direction: column;
     font-size: 16px;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(94, 94, 94);
-}
-
-.topicos li{
-    padding-bottom: 10px;
+    color: #fcfcfc;
+    align-items: center;
 }
 
 .dados li{
-    display: block;
-    position: relative;
-    padding-top: 3%;
+    padding-bottom: 2%;
+    list-style: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.dados li a{
+    text-decoration: none;
+    color: rgb(0, 68, 228);
+}
+
+.dados li a:hover{
+    color: rgb(1, 55, 181);
+    transition: 0.1s;
 }
 
 .dados h3{
-    display: block;
-    position: relative;
-    padding-top: 1%;
+    font-size: 28px;
 }
