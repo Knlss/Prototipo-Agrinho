@@ -6,6 +6,11 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+li a{
+    text-decoration: none;
+    color: rgb(0, 68, 228);
+}
+
 .header{
     display: flex;
     position:fixed;
@@ -17,7 +22,7 @@ body{
     justify-content: start;
     font-size: 38px;
     font-weight: bold;
-    height: 140px;
+    height: 110px;
     padding-left: 24px;
     background-color: rgb(8, 9, 8);
     color: #fcfcfc;
@@ -49,6 +54,26 @@ body{
     margin: 20px 40px 20px 40px;
 }
 
+.section-img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 2%;
+
+}
+
+.section img{
+    height: 25%;
+    width: 35%;
+    border-radius: 20px;
+}
+
+.share-img{
+    height: 4%;
+    width: 4%;
+}
+
 .subTitle{
     font-size: 26px;
     margin-bottom: 0px;
@@ -78,11 +103,6 @@ body{
     list-style: none;
     font-weight: bold;
     font-size: 20px;
-}
-
-.dados li a{
-    text-decoration: none;
-    color: rgb(0, 68, 228);
 }
 
 .dados li a:hover{
