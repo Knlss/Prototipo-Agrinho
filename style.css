@@ -116,7 +116,12 @@ li a{
     font-size: 28px;
 }
 
-.content {
+.content{
+    display: flex;
+    justify-content: center;
+}
+
+.content_slide{
     height: 500px;
     width: 800px;
     border-radius: 20px;
@@ -138,10 +143,15 @@ li a{
 
 .bar {
     width: 70px;
-    height: 17px;
+    height: 11px;
     border: 2px solid #278f86;
     border-radius: 25px;
     margin: 2%;
+}
+
+.bar:hover {
+    transition: 0.4s;
+    background-color: #99bc41;
 }
 
 .slides {
@@ -174,4 +184,11 @@ li a{
 
 #slide4:checked~.s1 {
     margin-left: -75%;
+}
+
+.share{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 3%;
 }
