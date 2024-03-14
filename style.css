@@ -56,7 +56,7 @@ li a{
     margin: 20px 40px 20px 40px;
 }
 
-.section-img{
+.section-item{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -71,9 +71,27 @@ li a{
     border-radius: 20px;
 }
 
+.share ul{
+    width: 100%;
+    display: flex;
+}
+
+.share ul li {
+    list-style-type: none;
+    padding-right: 14px;
+    height: 30px;
+    width: 30px;
+}
+
 .share-img{
-    height: 4%;
-    width: 4%;
+    width: 30px;
+    height: 30px;
+}
+
+.share-label{
+    background-color: #fcfcfc;
+    height: 100%;
+    width: 100%;
 }
 
 .subTitle{
