@@ -79,19 +79,30 @@ li a{
 .share ul li {
     list-style-type: none;
     padding-right: 14px;
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
 }
 
 .share-img{
     width: 30px;
     height: 30px;
+    margin-left: 5px;
+    margin-top: 5px;
 }
 
 .share-label{
-    background-color: #fcfcfc;
-    height: 100%;
-    width: 100%;
+    --shareBackgroundColor: #12e627;
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    border: 2px solid var(--shareBackgroundColor);
+    position: relative;
+    background-color: var(--shareBackgroundColor);
+}
+
+.share-label:hover{
+    --shareBackgroundColor: #07580f;
+    transition: 0.3s;
 }
 
 .subTitle{
