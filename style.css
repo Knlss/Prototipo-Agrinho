@@ -56,7 +56,7 @@ li a{
     margin: 20px 40px 20px 40px;
 }
 
-.section-item{
+.section-img{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -91,7 +91,7 @@ li a{
 }
 
 .share-label{
-    --shareBackgroundColor: #12e627;
+    --shareBackgroundColor: #205b26;
     height: 40px;
     width: 40px;
     border-radius: 30px;
@@ -101,7 +101,7 @@ li a{
 }
 
 .share-label:hover{
-    --shareBackgroundColor: #07580f;
+    --shareBackgroundColor: #24a832;
     transition: 0.3s;
 }
 
@@ -183,6 +183,38 @@ li a{
     background-color: #99bc41;
 }
 
+@keyframes slideshow1 {
+    0%, 20% { margin-left: 0%; }
+    25%, 45% { margin-left: -25%; }
+    50%, 70% { margin-left: -50%; }
+    75%, 95% { margin-left: -75%; }
+    100% { margin-left: 0%; }
+}
+
+@keyframes slideshow2 {
+    0%, 20% { margin-left: -25%; }
+    25%, 45% { margin-left: -50%; }
+    50%, 70% { margin-left: -75%; }
+    75%, 95% { margin-left: 0%; }
+    100% { margin-left: -25%; }
+}
+
+@keyframes slideshow3 {
+    0%, 20% { margin-left: -50%; }
+    25%, 45% { margin-left: -75%; }
+    50%, 70% { margin-left: 0%; }
+    75%, 95% { margin-left: -25%; }
+    100% { margin-left: -50%; }
+}
+
+@keyframes slideshow4 {
+    0%, 20% { margin-left: -75%; }
+    25%, 45% { margin-left: 0%; }
+    50%, 70% { margin-left: -25%; }
+    75%, 95% { margin-left: -50%; }
+    100% { margin-left: -75%; }
+}
+
 .slides {
     display: flex;
     width: 400%;
@@ -200,24 +232,31 @@ li a{
 }
 
 #slide1:checked~.s1 {
-    margin-left: 0;
+    animation: slideshow1 20s infinite;
+    position: relative;
 }
 
 #slide2:checked~.s1 {
-    margin-left: -25%;
+    animation: slideshow2 20s infinite;
+    position: relative;
 }
 
 #slide3:checked~.s1 {
-    margin-left: -50%;
+    animation: slideshow3 20s infinite;
+    position: relative;
 }
 
 #slide4:checked~.s1 {
-    margin-left: -75%;
+    animation: slideshow4 20s infinite;
+    position: relative;
 }
 
 .share{
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+
+.share h4{
     margin-left: 3%;
 }
