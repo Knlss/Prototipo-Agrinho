@@ -1,15 +1,79 @@
+:root{
+    --background: rgb(18, 20, 19);
+    --link_color: rgb(0, 68, 228);
+    --section_background: rgb(8, 9, 8);
+    --text_color: #fcfcfc;
+    --section_border: #205b26;
+    --share_hover: #24a832;
+    --link_hover: rgb(1, 55, 181);
+    --slide_bar: #278f86;
+    --slide_bar_hover: #99bc41;
+}
+
+:root:has(#toggle:checked){
+    --section_background: rgb(201, 230, 205);
+    --section_border: #6ee47a;
+    --background: #d8ead3;
+    --text_color: rgb(9, 67, 38);
+}
+
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(18, 20, 19);
-    color: #fcfcfc;
+    background-color: var(--background);
+    color:  var(--text_color);
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
 }
 
+.slider {
+    position: relative;
+    width: 60px;
+    height: 34px;
+    border: 3px var(--section_border) solid;
+    border-radius: 34px;
+    margin-right: 5%;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider .slider-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background);
+    border-radius: 34px;
+    transition: .4s;
+}
+
+.slider .slider-btn:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--section_border);
+    border-radius: 50%;
+    transition: .4s;
+}
+
+input:checked + .slider-btn {
+    background-color: var(--background);
+}
+
+input:checked + .slider-btn:before {
+    transform: translateX(26px);
+}
+
 li a{
     text-decoration: none;
-    color: rgb(0, 68, 228);
+    color: var(--link_color)
 }
 
 .header{
@@ -20,14 +84,14 @@ li a{
     width:100%;
     flex-direction: row;
     align-items: center;
-    justify-content: start;
+    justify-content: space-between;
     font-size: 38px;
     font-weight: bold;
     height: 110px;
     padding-left: 24px;
-    background-color: rgb(8, 9, 8);
-    color: #fcfcfc;
-    border-bottom: 10px #205b26 solid;
+    background-color: var(--section_background);
+    color: var(--text_color);
+    border-bottom: 10px var(--section_border) solid;
     z-index: 999;
 }
 
@@ -86,7 +150,7 @@ li a{
 }
 
 .share-label{
-    --shareBackgroundColor: #205b26;
+    --shareBackgroundColor: var(--section_border);
     height: 40px;
     width: 40px;
     border-radius: 30px;
@@ -96,7 +160,7 @@ li a{
 }
 
 .share-label:hover{
-    --shareBackgroundColor: #24a832;
+    --shareBackgroundColor: var(--share_hover);
     transition: 0.3s;
 }
 
@@ -106,8 +170,8 @@ li a{
 }
 
 .footer{
-    border-top: 10px #205b26 solid;
-    background-color: rgb(8, 9, 8);
+    border-top: 10px var(--section_border) solid;
+    background-color: var(--section_background);
     padding: 5px 70px 5px 70px;
     display: flex;
     flex-direction: row;
@@ -120,7 +184,7 @@ li a{
     flex-direction: column;
     font-size: 16px;
     font-weight: bold;
-    color: #fcfcfc;
+    color: var(--text_color);
     align-items: center;
 }
 
@@ -132,7 +196,7 @@ li a{
 }
 
 .dados li a:hover{
-    color: rgb(1, 55, 181);
+    color: var(--link_hover);
     transition: 0.1s;
 }
 
@@ -168,14 +232,14 @@ li a{
 .bar {
     width: 70px;
     height: 11px;
-    border: 2px solid #278f86;
+    border: 2px solid var(--slide_bar);
     border-radius: 25px;
     margin: 2%;
 }
 
 .bar:hover {
     transition: 0.4s;
-    background-color: #99bc41;
+    background-color: var(--slide_bar_hover);
 }
 
 @keyframes slideshow1 {
@@ -260,7 +324,7 @@ li a{
 
 @media (max-width: 780px){
     .header{
-        justify-content: center;
+        justify-content: space-around;
         font-size: 34px;
         position: relative;
         padding-left: 0;
