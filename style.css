@@ -1,9 +1,9 @@
 :root{
-    --background: rgb(18, 20, 19);
+    --background: #322117;
     --link_color: rgb(0, 68, 228);
-    --section_background: rgb(8, 9, 8);
-    --text_color: #fcfcfc;
-    --section_border: #205b26;
+    --section_background: #341d10;
+    --text_color: #F5DFBB;
+    --section_border: #24a832;
     --share_hover: #24a832;
     --link_hover: rgb(1, 55, 181);
     --slide_bar: #278f86;
@@ -11,10 +11,10 @@
 }
 
 :root:has(#toggle:checked){
-    --section_background: rgb(201, 230, 205);
-    --section_border: #6ee47a;
-    --background: #d8ead3;
-    --text_color: rgb(9, 67, 38);
+    --section_background:#d6c09d;
+    --section_border: #24a832;
+    --background: #F5DFBB;
+    --text_color: #341d10;
 }
 
 body{
@@ -112,6 +112,7 @@ li a{
 .section{
     display: flex;
     flex-direction: column;
+    font-size: 18px;
     margin: 20px 40px 20px 40px;
 }
 
