@@ -26,6 +26,46 @@ body{
     overflow-x: hidden;
 }
 
+
+.header{
+    display: flex;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 38px;
+    font-weight: bold;
+    height: 110px;
+    padding-left: 24px;
+    background-color: var(--section_background);
+    color: var(--text_color);
+    border-bottom: 10px var(--section_border) solid;
+    z-index: 999;
+}
+
+.header a{
+    font-size: 38px;
+    color: var(--text_color);
+    text-decoration: none;
+}
+
+.navBar{
+    width:70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.navBar a{
+    color: var(--section_border);
+    font-size:30px;
+    text-decoration: none;
+    padding-right: 15px;
+}
+
 .slider {
     position: relative;
     width: 60px;
@@ -76,25 +116,6 @@ li a{
     color: var(--link_color)
 }
 
-.header{
-    display: flex;
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 38px;
-    font-weight: bold;
-    height: 110px;
-    padding-left: 24px;
-    background-color: var(--section_background);
-    color: var(--text_color);
-    border-bottom: 10px var(--section_border) solid;
-    z-index: 999;
-}
-
 .title{
     display: flex;
     flex-direction: column;
@@ -116,6 +137,10 @@ li a{
     margin: 20px 40px 20px 40px;
 }
 
+.section li{
+    list-style-type: none;
+}
+
 .section-img{
     display: flex;
     flex-direction: column;
@@ -131,9 +156,21 @@ li a{
     border-radius: 20px;
 }
 
-.share ul{
-    width: 100%;
+
+.share{
     display: flex;
+    flex-direction: column;
+}
+
+.share h4{
+    margin-left: 3%;
+}
+
+
+.share ul{
+    display: flex;
+    justify-content: center;
+    padding-left: 14px;
 }
 
 .share ul li {
@@ -311,16 +348,6 @@ li a{
     position: relative;
 }
 
-.share{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.share h4{
-    margin-left: 3%;
-}
-
 /*---------------------------------------------------------------*/
 
 @media (max-width: 780px){
@@ -329,6 +356,10 @@ li a{
         font-size: 34px;
         position: relative;
         padding-left: 0;
+    }
+
+    .navBar{
+        display: none;
     }
 
     .title{
