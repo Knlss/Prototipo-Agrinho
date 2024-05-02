@@ -4,10 +4,12 @@
     --section_background: #341d10;
     --text_color: #F5DFBB;
     --section_border: #24a832;
+    --section_hover: #078f14;
     --share_hover: #24a832;
     --link_hover: rgb(1, 55, 181);
     --slide_bar: #278f86;
     --slide_bar_hover: #99bc41;
+    --shadow: rgba(0, 0, 0, 0.3)
 }
 
 :root:has(#toggle:checked){
@@ -15,6 +17,10 @@
     --section_border: #24a832;
     --background: #F5DFBB;
     --text_color: #341d10;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
@@ -63,7 +69,22 @@ body{
     color: var(--section_border);
     font-size:30px;
     text-decoration: none;
-    padding-right: 15px;
+    border: 1px solid var(--section_border);
+    border-width: 1px 1px 5px;
+    height: 85px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px 0px 5px var(--shadow)
+}
+
+.navBar a:hover{
+    cursor: pointer;
+    border: 1px solid var(--section_hover);
+    border-width: 1px 1px 5px;
+    box-shadow: inset 0px 0px 30px var(--shadow);
+    transition: 0.3s;
 }
 
 .slider {
