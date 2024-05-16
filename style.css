@@ -132,11 +132,6 @@ input:checked + .slider-btn:before {
     transform: translateX(26px);
 }
 
-li a{
-    text-decoration: none;
-    color: var(--link_color)
-}
-
 .title{
     display: flex;
     flex-direction: column;
@@ -158,109 +153,19 @@ li a{
     margin: 20px 40px 20px 40px;
 }
 
-.section li{
-    list-style-type: none;
-}
-
-.section-img{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    margin-top: 2%;
-
-}
-
 .section img{
     height: 25%;
     width: 35%;
     border-radius: 20px;
 }
 
-
-.share{
-    display: flex;
-    flex-direction: column;
-}
-
-.share h4{
-    margin-left: 3%;
-}
-
-
-.share ul{
-    display: flex;
-    justify-content: center;
-    padding-left: 14px;
-}
-
-.share ul li {
+.section li{
     list-style-type: none;
-    padding-right: 14px;
-    height: 40px;
-    width: 40px;
-}
-
-.share-img{
-    width: 30px;
-    height: 30px;
-    margin-left: 5px;
-    margin-top: 5px;
-}
-
-.share-label{
-    --shareBackgroundColor: var(--section_border);
-    height: 40px;
-    width: 40px;
-    border-radius: 30px;
-    border: 2px solid var(--shareBackgroundColor);
-    position: relative;
-    background-color: var(--shareBackgroundColor);
-}
-
-.share-label:hover{
-    --shareBackgroundColor: var(--share_hover);
-    transition: 0.3s;
 }
 
 .subTitle{
     font-size: 26px;
     margin-bottom: 0px;
-}
-
-.footer{
-    border-top: 10px var(--section_border) solid;
-    background-color: var(--section_background);
-    padding: 5px 70px 5px 70px;
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: space-between;
-}
-
-.dados{
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    font-weight: bold;
-    color: var(--text_color);
-    align-items: center;
-}
-
-.dados li{
-    padding-bottom: 2%;
-    list-style: none;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.dados li a:hover{
-    color: var(--link_hover);
-    transition: 0.1s;
-}
-
-.dados h3{
-    font-size: 28px;
 }
 
 .content{
@@ -278,27 +183,6 @@ li a{
 
 .input {
     display: none;
-}
-
-.navigation {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translate(-50%);
-    display: flex;
-}
-
-.bar {
-    width: 70px;
-    height: 11px;
-    border: 2px solid var(--slide_bar);
-    border-radius: 25px;
-    margin: 2%;
-}
-
-.bar:hover {
-    transition: 0.4s;
-    background-color: var(--slide_bar_hover);
 }
 
 @keyframes slideshow1 {
@@ -367,6 +251,120 @@ li a{
 #slide4:checked~.s1 {
     animation: slideshow4 20s infinite;
     position: relative;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 70px;
+    height: 11px;
+    border: 2px solid var(--slide_bar);
+    border-radius: 25px;
+    margin: 2%;
+}
+
+.bar:hover {
+    transition: 0.4s;
+    background-color: var(--slide_bar_hover);
+}
+
+.section-img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 2%;
+
+}
+
+.footer{
+    border-top: 10px var(--section_border) solid;
+    background-color: var(--section_background);
+    padding: 5px 70px 5px 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.dados{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--text_color);
+    align-items: center;
+}
+
+.dados h3{
+    font-size: 28px;
+}
+
+.dados li{
+    padding-bottom: 2%;
+    list-style: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.dados li a:hover{
+    color: var(--link_hover);
+    transition: 0.1s;
+}
+
+.share{
+    display: flex;
+    flex-direction: column;
+}
+
+.share h4{
+    margin-left: 3%;
+}
+
+.share ul{
+    display: flex;
+    justify-content: center;
+    padding-left: 14px;
+}
+
+.share ul li {
+    list-style-type: none;
+    padding-right: 14px;
+    height: 40px;
+    width: 40px;
+}
+
+li a{
+    text-decoration: none;
+    color: var(--link_color)
+}
+
+.share-label{
+    --shareBackgroundColor: var(--section_border);
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    border: 2px solid var(--shareBackgroundColor);
+    position: relative;
+    background-color: var(--shareBackgroundColor);
+}
+
+.share-label:hover{
+    --shareBackgroundColor: var(--share_hover);
+    transition: 0.3s;
+}
+
+.share-img{
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    margin-top: 5px;
 }
 
 /*---------------------------------------------------------------*/
