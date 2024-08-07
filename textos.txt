@@ -1,0 +1,37 @@
+topico 1:
+    A agricultura de precisão é um modelo de gestão das informações dos processos agrícolas que utiliza maquinários modernos e 
+    tecnologias atuais. Seu objetivo é otimizar a produção agrícola, aumentando a produtividade e a sustentabilidade.
+
+    Ou seja, abrange uma gama de técnicas agrícolas por meio de tecnologias modernas. Todo o processo produtivo é considerado, 
+    desde a análise do solo até a comercialização dos produtos, permitindo uma maior eficiência das atividades, resultando em maiores 
+    produtividades e menores custos.
+
+    Comumente, a agricultura tradicional, ainda muito utilizada hoje em dia, tende a tratar a lavoura como uma área uniforme, possuindo 
+    as mesmas características de solo, pragas e outros fatores. No entanto, desuniformidades podem ser ocasionadas por diversos fatores,
+     principalmente em grandes áreas de monocultura, tornando essencial mapeá-las para a potencialização da produção agrícola.
+
+    Através da agricultura de precisão, é possível ao produtor mapear e entender essas desuniformidades, evitando gastos excessivos com 
+    insumos agrícolas e maior contaminação do solo pelo uso de corretivos e agrotóxicos.
+
+    Ela é realizada em três etapas principais: coleta de dados, planejamento do gerenciamento e aplicação localizada de insumos, 
+    descritas no próximo tópico.
+
+topico 2:
+    Nesse modelo de gestão, diversas ferramentas são utilizadas para seu manejo. Os conceitos de agricultura de precisão englobam melhorias 
+    em todas as operações da produção. Abaixo, veja algumas das principais tecnologias para aplicações e levantamentos de dados.
+
+    Drones: Utilizados para monitorar e mapear culturas, capturando imagens detalhadas que ajudam a identificar áreas problemáticas, como 
+    zonas de estresse hídrico ou infestação de pragas. Além disso, realizam análises de solo e pulverizam insumos agrícolas de forma 
+    precisa, otimizando o uso de insumos agrícolas e minimizando o impacto ambiental.
+
+    Estações meteorológicas: Fornece dados em tempo real sobre condições climáticas como temperatura, umidade e precipitação. Esses dados 
+    ajudam os agricultores a tomar decisões informadas sobre plantio, irrigação, aplicação de insumos e colheita. Ao otimizar o uso de água
+    e insumos, elas promovem práticas agrícolas mais eficientes e sustentáveis.
+
+    Semeadoras tecnológicas: Equipadas com GPS e sensores, elas controlam a profundidade e o espaçamento das sementes, ajustando a 
+    quantidade plantada com base nas condições do solo. Monitoram a operação em tempo real e integram dados de mapeamento do solo, 
+    permitindo uma adaptação exata às condições locais.
+
+    Aplicativos de gestão: Os aplicativos de gestão na agricultura de precisão centralizam e analisam dados de várias fontes, como sensores 
+    e estações meteorológicas. Eles ajudam os agricultores a monitorar as condições das culturas, otimizar práticas como irrigação e 
+    fertilização, e gerenciar custos e recursos de forma eficiente. 
