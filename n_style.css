@@ -6,7 +6,7 @@
     --link_color: rgb(7, 209, 24);
     --section_hover: #078f14;
     --share_hover: #24a832;
-    --link_hover: rgb(1, 55, 181);
+    --link_hover: rgb(4, 126, 14);
     --slide_bar: #278f86;
     --slide_bar_hover: #99bc41;
     --shadow: rgba(0, 0, 0, 0.3);
@@ -132,7 +132,7 @@ input:checked + .toggleMode-btn:before {
     display: flex;
     flex-direction: column;
     font-size: 18px;
-    margin: 20px 20% 40px 18%;
+    margin: 20px 0px 40px 18%;
     width: 65%
 }
 
@@ -144,12 +144,6 @@ input:checked + .toggleMode-btn:before {
 .textBlock p{
     margin: 8px 0;
     text-indent: 30px;
-}
-
-.textBlock img{
-    height: 25%;
-    width: 35%;
-    border-radius: 20px;
 }
 
 .listUlBenefits {
@@ -233,6 +227,13 @@ input:checked + .toggleMode-btn:before {
     font-size: 22px;
     background-color: var(--background);
     font-weight: 600;
+    cursor: pointer;
+}
+
+.buttonBackTop:hover{
+    transition: 0.3s;
+    border-color: var(--section_hover);
+    background-color: var(--section_background);
 }
 
 .contentButton{
@@ -255,6 +256,11 @@ input:checked + .toggleMode-btn:before {
 .contentToggleIndex label, .contentToggleIndex a{
     text-decoration: none;
     color: var(--link_color);
+    cursor: pointer;
+}
+
+.contentToggleIndex a:hover , .textBlock a:hover, .contentToggleIndex label:hover{
+    color: var(--link_hover);
 }
 
 .contentToggleIndex ul{
@@ -299,4 +305,140 @@ input:checked + .toggleMode-btn:before {
 
 .contentToggleIndex h5:has(#toggleIndexButton:checked){
     margin: 15px auto 20px auto;
+}
+
+.contentSlide{
+    display: flex;
+    justify-content: center;
+}
+
+.contentSliderShow{
+    height: 500px;
+    width: 800px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slideInput {
+    display: none;
+}
+
+@keyframes slideshow1 {
+    0%, 20% { margin-left: 0%; }
+    25%, 45% { margin-left: -25%; }
+    50%, 70% { margin-left: -50%; }
+    75%, 95% { margin-left: -75%; }
+    100% { margin-left: 0%; }
+}
+
+@keyframes slideshow2 {
+    0%, 20% { margin-left: -25%; }
+    25%, 45% { margin-left: -50%; }
+    50%, 70% { margin-left: -75%; }
+    75%, 95% { margin-left: 0%; }
+    100% { margin-left: -25%; }
+}
+
+@keyframes slideshow3 {
+    0%, 20% { margin-left: -50%; }
+    25%, 45% { margin-left: -75%; }
+    50%, 70% { margin-left: 0%; }
+    75%, 95% { margin-left: -25%; }
+    100% { margin-left: -50%; }
+}
+
+@keyframes slideshow4 {
+    0%, 20% { margin-left: -75%; }
+    25%, 45% { margin-left: 0%; }
+    50%, 70% { margin-left: -25%; }
+    75%, 95% { margin-left: -50%; }
+    100% { margin-left: -75%; }
+}
+
+.contentSlides {
+    display: flex;
+    width: 400%;
+    height: 100%;
+}
+
+.slideShow {
+    width: 25%;
+    transition: .6s;
+}
+
+#slide1:checked~.s1 {
+    animation: slideshow1 20s infinite;
+    position: relative;
+}
+
+#slide2:checked~.s1 {
+    animation: slideshow2 20s infinite;
+    position: relative;
+}
+
+#slide3:checked~.s1 {
+    animation: slideshow3 20s infinite;
+    position: relative;
+}
+
+#slide4:checked~.s1 {
+    animation: slideshow4 20s infinite;
+    position: relative;
+}
+
+.contentSlideNavigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.slideBar {
+    width: 70px;
+    height: 11px;
+    border: 2px solid var(--slide_bar);
+    border-radius: 25px;
+    margin: 2%;
+}
+
+.slideBar:hover {
+    transition: 0.4s;
+    background-color: var(--slide_bar_hover);
+}
+
+.contentImage{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    align-items: center;
+    margin: 20px 0px 40px 18%;
+}
+
+.contentImage img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;    
+}
+
+.topics{
+    padding-left: 30px;
+}
+
+.textTopics{
+    padding-left: 50px;
+}
+
+.textParagraph{
+    padding-left: 10px;
+}
+
+
+@media (max-width: 780px){
+    .header{
+        justify-content: space-around;
+        font-size: 34px;
+        position: relative;
+    }
 }
