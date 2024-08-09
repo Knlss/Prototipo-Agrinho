@@ -309,7 +309,10 @@ input:checked + .toggleMode-btn:before {
 
 .contentSlide{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    font-size: 18px;
+    margin: 20px 0px 40px 18%;
+    width: 65%
 }
 
 .contentSliderShow{
@@ -440,5 +443,30 @@ input:checked + .toggleMode-btn:before {
         justify-content: space-around;
         font-size: 34px;
         position: relative;
+        padding-left: 0;
+    }
+/*------------------------------*/
+    .contentSlide{
+        text-align: center;
+    }
+    .contentSliderShow{
+        height: 100%;
+        width: 100%;
+    }
+    .contentSlide .contentSliderShow img{
+        height: 100%;
+        width: 100%;
+    }
+    .contentSlideNavigation{
+        width: 85%;
+    }
+    .slideBar:hover {
+        background-color: transparent;
+    }
+/*-----------------------------------*/
+   .footer{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
     }
 }
