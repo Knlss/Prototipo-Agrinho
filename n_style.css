@@ -3,13 +3,15 @@
     --section_border: #24a832;
     --background: #F5DFBB;
     --text_color: #341d10;
-    --link_color: rgb(0, 68, 228);
+    --link_color: rgb(7, 209, 24);
     --section_hover: #078f14;
     --share_hover: #24a832;
     --link_hover: rgb(1, 55, 181);
     --slide_bar: #278f86;
     --slide_bar_hover: #99bc41;
-    --shadow: rgba(0, 0, 0, 0.3)
+    --shadow: rgba(0, 0, 0, 0.3);
+    --index_display: none;
+    --index_width: 290px;
 }
 
 :root:has(#toggleModeButton:checked){
@@ -17,6 +19,12 @@
     --section_border: #24a832;
     --background: #322117;
     --text_color: #F5DFBB;
+}
+
+:root:has(#toggleIndexButton:checked){
+        transition: 1s;
+        --index_width: 40%;
+        --index_display: flex;
 }
 
 html{
@@ -34,7 +42,6 @@ body{
 
 .header{
     display: flex;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -113,7 +120,7 @@ input:checked + .toggleMode-btn:before {
 .title h2{
     font-size: 36px;
     font-weight: bold;
-    margin-top: 150px;
+    margin: 100px auto;
 }
 
 .subTitle{
@@ -121,12 +128,17 @@ input:checked + .toggleMode-btn:before {
     margin-bottom: 25px;
 }
 
-.textBlock{
+.textBlock {
     display: flex;
     flex-direction: column;
     font-size: 18px;
     margin: 20px 20% 40px 18%;
-    width: 65%;
+    width: 65%
+}
+
+.textBlock a{
+    text-decoration: none;
+    color: var(--link_color);
 }
 
 .textBlock p{
@@ -150,17 +162,25 @@ input:checked + .toggleMode-btn:before {
     padding: 5px 70px 5px 70px;
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: start;
     justify-content: space-between;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #200d0d;
 }
 
 .contentShare{
     display: flex;
     flex-direction: column;
+    padding-top: 150px;
 }
 
 .contentShare h4{
-    margin-left: 3%;
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 0px 3%;
 }
 
 .contentShare ul{
@@ -174,6 +194,7 @@ input:checked + .toggleMode-btn:before {
     padding-right: 14px;
     height: 40px;
     width: 40px;
+    margin-left: 0;
 }
 
 .contentShareLabel{
@@ -201,4 +222,81 @@ input:checked + .toggleMode-btn:before {
 .contentIndex li{
     list-style-type: none;
     margin-bottom: 7px;
+}
+
+.buttonBackTop{
+    width: 250px;
+    height: 60px;
+    border: 3px solid var(--section_border);
+    border-radius: 20px;
+    color: var(--text_color);
+    font-size: 22px;
+    background-color: var(--background);
+    font-weight: 600;
+}
+
+.contentButton{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 170px;
+}
+
+.copyright{
+    background-color: var(--section_border);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--text_color);
+    font-size: 18px;
+}
+
+.contentToggleIndex label, .contentToggleIndex a{
+    text-decoration: none;
+    color: var(--link_color);
+}
+
+.contentToggleIndex ul{
+    list-style-type: none;
+    display: var(--index_display);
+    flex-direction: column;
+}
+
+.listIndexItems{
+    padding: 0px 0px 0px 40px;
+    font-size: 15px;
+}
+
+.listIndexItems ul{
+    padding: 0px 0px 0px 20px;
+}
+
+.listIndexItems li{
+    padding: 0px 0px 10px 0px;
+}
+
+.contentToggleIndex label{
+    font-weight: 400;
+}
+
+.contentToggleIndex{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    margin: 20px 20% 40px 18%;
+    width: var(--index_width);
+    border: 1px solid var(--section_border);
+}
+
+.toggleIndexButton{
+    display: none;
+}
+
+.contentToggleIndex h5{
+    margin: 15px auto;
+}
+
+.contentToggleIndex h5:has(#toggleIndexButton:checked){
+    margin: 15px auto 20px auto;
 }
